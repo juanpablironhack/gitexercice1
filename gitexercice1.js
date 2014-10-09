@@ -24,8 +24,12 @@ for(index =0; index <5; index++){
 }
 result = calculateResult(whiteBalls, powerBall);
 if(result < 0) {
-	(console.log"Invalid arguments";)
+	console.log("Invalid arguments");
 	return -1;
+}
+
+if(powerBall === 7) {
+	result = result *2;
 }
 console.log ( result + ' percent chance of winning.');
 return 0;
