@@ -23,12 +23,10 @@ for(index =0; index <5; index++){
 	whiteBalls[index] = parseInt (process.argv [2+index]);
 }
 result = calculateResult(whiteBalls, powerBall);
-
-if(powerBall < 0) {
+if(result < 0) {
 	(console.log"Invalid arguments";)
 	return -1;
 }
-
 console.log ( result + ' percent chance of winning.');
 return 0;
 };
