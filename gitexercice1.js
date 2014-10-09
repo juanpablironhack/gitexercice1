@@ -11,6 +11,7 @@ if ((powerBall <1) || (powerBall >39)) {
 return 0;
 
 };
+var luckyNumber=7;
 var lottery = function (){
 	var powerBall, witheBalls, index, result;
 	if (process.argv.length !== 8) {
@@ -28,7 +29,7 @@ if(result < 0) {
 	return -1;
 }
 
-if(powerBall === 7) {
+if(powerBall === luckyNumber) {
 	result = result *2;
 }
 console.log ( result + ' percent chance of winning.');
